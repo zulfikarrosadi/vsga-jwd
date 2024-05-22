@@ -19,15 +19,15 @@ function hitung_tarif($lama_parkir, $tarif)
   <form action="" method="get">
     <li>
       <label for="no_polisi">No Polisi: </label>
-      <input type="text" name="no_polisi" id="no_polisi">
+      <input type="text" name="no_polisi" id="no_polisi" required>
     </li>
     <li>
       <label for="lama_parkir">Lama Parkir: </label>
-      <input type="number" name="lama_parkir" id="lama_parkir">
+      <input type="number" name="lama_parkir" id="lama_parkir" required>
     </li>
     <li>
       <label for="tarif">Tarif / Jam: </label>
-      <input type="number" name="tarif" id="tarif">
+      <input type="number" name="tarif" id="tarif" required>
     </li>
     <li><button name="submit">Hitung</button></li>
   </form>
