@@ -1,3 +1,11 @@
+<?php
+
+function hitung_tarif($lama_parkir, $tarif)
+{
+  return $lama_parkir * $tarif;
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -25,7 +33,7 @@
   </form>
   <?php
   if (isset($_GET['submit'])) {
-    $hasil = $_GET['lama_parkir'] * $_GET['tarif'];
+    $hasil = hitung_tarif($_GET['lama_parkir'], $_GET['tarif']);
     echo 'Kendaraan dengan No. Polisi ' . $_GET['no_polisi'] . ' dikenakan tarif parkir ' . $hasil;
   }
   ?>
